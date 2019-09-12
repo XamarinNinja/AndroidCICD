@@ -6,6 +6,10 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 
 namespace AndroidCICD
 {
@@ -17,6 +21,11 @@ namespace AndroidCICD
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
+            Distribute.SetEnabledForDebuggableBuild(true);
+            AppCenter.Start("f93ba690-525e-40af-bcda-1135c7263771",
+                   typeof(Analytics), typeof(Crashes));
+
             SetContentView(Resource.Layout.activity_main);
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
@@ -46,7 +55,7 @@ namespace AndroidCICD
         private void FabOnClick(object sender, EventArgs eventArgs)
         {
             View view = (View) sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
+            Snackbar.Make(view, "Fab Button Click dfds", Snackbar.LengthLong)
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
