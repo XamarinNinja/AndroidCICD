@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidCICD", "AndroidCICD.csproj", "{E9D370ED-0395-48E2-886F-80B7433A1306}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9D370ED-0395-48E2-886F-80B7433A1306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D370ED-0395-48E2-886F-80B7433A1306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D370ED-0395-48E2-886F-80B7433A1306}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E9D370ED-0395-48E2-886F-80B7433A1306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D370ED-0395-48E2-886F-80B7433A1306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D370ED-0395-48E2-886F-80B7433A1306}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B5E5868-A959-40ED-8E83-5D0A87788ADC}
+	EndGlobalSection
+EndGlobal
